@@ -1,0 +1,144 @@
+/* A CSS code for my gaming store with various styles.
+
+/* class is used to make images responsive */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  /* adds a hover effec */
+  .responsive-img:hover {
+    transform: scale(1.05);
+  }
+  /* class styles a button for checkout with a blue background, white text, and rounded corners. */
+  .checkout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  /* classes are used to style headings, with h1 having a centered text and a text-shadow effec */
+  h2 {
+    color: white;
+  }
+  h1 {
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+
+  /* class is used to style the price of a product with white text. */
+    .price {
+        color: white;
+        }
+        /* lass styles a container for a form and sets its maximum width to 800px. 
+        It uses flexbox to display the form fields with space-between alignment. */
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    /* class styles each form field to have a margin-bottom of 20px and a width of 33.33% minus 10px ( */
+    .form-field {
+        flex-basis: calc(33.33% - 10px);
+        margin-bottom: 20px;
+    }
+    /* class styles the label of each form field with a margin-bottom of 5px and white color. */
+    .form-field label {
+        display: block;
+        margin-bottom: 5px;
+        color: white;
+    }
+    /* class styles the input of each form field with a border radius of 5px and no border */
+    .form-field input {
+        width: 80%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    /* The submit button has a green background color and white text. */
+    .form-field input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+    /* add a hover effect on the submit button */
+    .form-field input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .copyright {
+        text-align: left;
+        color: black;
+      }
+    
+    /* This code sets a background image for the webpage using multiple images from URLs. The images are arranged using different positions and heights to create a multi-layered effect. */
+    body {
+    background-image: url('https://www.dropbox.com/s/gk4s0mgri0fd5gy/gameover1.png?raw=1'),
+                        url('https://www.dropbox.com/s/jqmhso9wrbdkc4d/gameover2.jpeg?raw=1'),
+                        url('https://www.dropbox.com/s/oj20smy0rxavzty/gameover3.png?raw=1'),
+                        url('https://www.dropbox.com/s/e4d2h6kjgkx4i6a/gameover4.jpeg?raw=1'),
+                        url('https://www.dropbox.com/s/9pnfnpvbskv28tb/gameover5.jpeg?raw=1'),
+                        url('https://www.dropbox.com/s/hesvts6xlzuu6sd/GAMEOVER%208.jpeg?raw=1'),
+                        url('https://www.dropbox.com/s/t034honemio2re5/gameover6.png?raw=1'),
+                        url('https://www.dropbox.com/s/ezgy1hvuflujoeu/gameover7.jpeg?raw=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px; /* adjust height to fit all images */
+    background-position: center 100px, center 1000px, center 2000px, center 3200px ,center 3800px, center 4500px, center 5000px, center 5500px;
+    background-color: red;
+}
+/* his code styles a "buy" button with a green background, white text, and padding. 
+It also adjusts the font size and adds a transition effect on hover. The button has no border and is centered horizontally. */
+.buy-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  /* Blue background on hover */
+  .buy-btn:hover {
+    background-color: blue; 
+    color: white;
+  }
+  /* targets the image element with an alt attribute equal to "Company Logo" and applies a margin-top of 40 pixels to it. */
+  img[alt="Company Logo"] {
+    margin-top: 40px;
+  }
+/* .blinking class adds an animation to make an element blink */
+  .blinking {
+    animation: blink 2s infinite;
+  }
+  /* css code defines a keyframe animation named "blink" that changes the opacity of an element to 0 at 50% of the animation. */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  /* add hover effect on the check out button */
+  .checkout-btn:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
